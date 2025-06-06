@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.FactoryMethod
+﻿namespace DesignPatterns.FactoryMethod.DiscountServiceExample
 {
     public abstract class DiscountFactory
     {
@@ -30,7 +24,7 @@ namespace DesignPatterns.FactoryMethod
     {
         public CodeDiscountFactory()
         {
-            
+
         }
         public override BaseDiscountService CreateDiscountService()
         {
@@ -47,7 +41,7 @@ namespace DesignPatterns.FactoryMethod
         }
         public override BaseDiscountService CreateDiscountService()
         {
-            return new CountryDiscountService(this.code);
+            return new CountryDiscountService(code);
         }
     }
 }
