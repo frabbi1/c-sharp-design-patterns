@@ -1,7 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
+using DesignPatterns.AbstractFactory;
 using DesignPatterns.FactoryMethod;
 using DesignPatterns.Singleton;
 
-SingletonClient.Run();
+// SingletonClient.Run();
 // FactoryMethodClient.RunForDiscountServiceExample();
-FactoryMethodClient.RunForEmployeeExample();
+// FactoryMethodClient.RunForEmployeeExample();
+AbstractFactoryClient.Run();
